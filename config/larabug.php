@@ -4,30 +4,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Login key
-    |--------------------------------------------------------------------------
-    |
-    | This is your authorization key which you get from your profile.
-    | Retrieve your key from https://www.larabug.com
-    |
-    */
-
-    'login_key' => env('LB_KEY', ''),
-
-    /*
-    |--------------------------------------------------------------------------
-    | Project key
-    |--------------------------------------------------------------------------
-    |
-    | This is your project key which you receive when creating a project
-    | Retrieve your key from https://www.larabug.com
-    |
-    */
-
-    'project_key' => env('LB_PROJECT_KEY', ''),
-
-    /*
-    |--------------------------------------------------------------------------
     | Environment setting
     |--------------------------------------------------------------------------
     |
@@ -98,25 +74,4 @@ return [
         '*name*',
         '*email*'
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Release git hash
-    |--------------------------------------------------------------------------
-    |
-    |
-    */
-
-    // 'release' => trim(exec('git --git-dir ' . base_path('.git') . ' log --pretty="%h" -n1 HEAD'))
-
-    /*
-    |--------------------------------------------------------------------------
-    | Server setting
-    |--------------------------------------------------------------------------
-    |
-    | This setting allows you to change the server.
-    |
-    */
-
-    'server' => env('LB_SERVER', 'https://www.larabug.com/api/log'),
 ];

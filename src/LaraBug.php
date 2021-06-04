@@ -2,7 +2,7 @@
 
 namespace LaraBug;
 
-use App\Http\Controllers\Logging\LoggingController;
+use LaraBug\Http\Controllers\LoggingController;
 use Throwable;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\App;
@@ -20,7 +20,7 @@ class LaraBug
     /** @var null|string */
     private $lastExceptionId;
 
-    
+
     public function __construct()
     {
         $this->blacklist = array_map(function ($blacklist) {
