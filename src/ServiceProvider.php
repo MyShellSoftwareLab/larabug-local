@@ -41,6 +41,10 @@ class ServiceProvider extends BaseServiceProvider
 
         // Create an alias to the larabug-js-client.blade.php include
         Blade::include('larabug::larabug-js-client', 'larabugJavaScriptClient');
+
+        $this->publishes([
+            __DIR__.'/database/migrations/' => database_path('migrations')
+        ], 'migrations');
     }
 
     /**
